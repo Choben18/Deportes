@@ -33,7 +33,7 @@ public class Futbol extends DeportesGenerales {
                 case 1 : { 
                          
                          break;}
-                case 2 : { super.d.establecerValores();
+                case 2 : { super.establecerValores();
                           
                           break;}
                 case 3 : correr();
