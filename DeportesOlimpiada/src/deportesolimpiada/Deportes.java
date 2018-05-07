@@ -56,15 +56,6 @@ public abstract class Deportes {
         setPosicionTabla();
          setContadorMedallas();
         setMedallas();
-<<<<<<< HEAD
-       
-=======
-
-       // setContadorMedallas();
-
-        //setContadorMedallas();
-
->>>>>>> a9086df0bd49f9b35527e1d19bf81a7c185132e9
     }
 
     public static void correr() {
@@ -88,6 +79,7 @@ public abstract class Deportes {
                     d.desplegarSubMenu();
                 case 4:
                     d = new Atletismo();
+                     d.desplegarSubMenu();
                     break;
                     
                 case 5:
@@ -199,16 +191,6 @@ public abstract class Deportes {
 
     @Override
     public String toString() {
-       return "";
-<<<<<<< HEAD
-=======
-   
-
-    //    return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
-       
-
-
->>>>>>> a9086df0bd49f9b35527e1d19bf81a7c185132e9
-    }
+       return "";}
 
 }
