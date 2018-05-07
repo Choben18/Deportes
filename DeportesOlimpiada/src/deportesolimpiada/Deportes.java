@@ -19,7 +19,8 @@ public abstract class Deportes {
     private String NombreDeporte;
     private int posicionTabla;
     private int NumeroDeRepresentantes;
-    private String[] Medallas = new String[3];
+    private String[] Medallas={"Oro","Plata","Bronce"};
+    private String medallas;
     private int contadormedallas;
     private String Nacionalidad;
 
@@ -129,16 +130,13 @@ public abstract class Deportes {
 
     }
 
-    public void setNombreDeporte() {
-       
+    public void setNombreDeporte(String name) {
+       this.NombreDeporte = name;
     }
 
     public void setPosicionTabla() {
-        int x, x1, x2;
-        x = Integer.parseInt(Medallas[0]);
-        x1 = Integer.parseInt(Medallas[1]) * 2;
-        x2 = Integer.parseInt(Medallas[2]) * 5;
-        puntosTabla = x + x1 + x2;
+        Random rd = new Random();
+        this.posicionTabla = rd.nextInt(2)+1;
     }
 
     public void setNumeroDeRepresentantes() {
@@ -147,9 +145,15 @@ public abstract class Deportes {
     }
 
     public void setMedallas() {
-        Medallas[0] = JOptionPane.showInputDialog(null, "Ingrese las medallas de bronce");
-        Medallas[1] = JOptionPane.showInputDialog(null, "Ingrese las medallas de Plata");
-        Medallas[2] = JOptionPane.showInputDialog(null, "Ingrese las medallas de Oro");
+        if (this.posicionTabla==3) {
+            this.medallas=Medallas[2];
+        }
+        if (this.posicionTabla==2) {
+            this.medallas=Medallas[1];
+        }
+        if (this.posicionTabla==1) {
+            this.medallas=Medallas[0];
+        }
 
     }
 
@@ -167,7 +171,7 @@ public abstract class Deportes {
 
     @Override
     public String toString() {
-        return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", puntosTabla=" + puntosTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
+        return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
     }
 
 }

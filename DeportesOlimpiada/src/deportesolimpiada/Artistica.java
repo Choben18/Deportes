@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author Angel
  */
 public class Artistica extends Gimnasia {
-
+    String movimientos;
     public Artistica() {
         super();
         desplegarSubMenu();
@@ -31,6 +31,9 @@ public class Artistica extends Gimnasia {
             Op = Op + 1;
             switch (Op) {
                 case 1: {
+                    setNombreDeporte("Artistica");
+                    establecerValores();
+                    setPuntuacion();
                     
                     break;
                 }
