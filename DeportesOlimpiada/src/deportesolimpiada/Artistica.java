@@ -38,7 +38,8 @@ public class Artistica extends Gimnasia {
                     break;
                 }
                 case 2: {
-                    
+                    setNombreDeporte(JOptionPane.showInputDialog(null,"Nombre del DEporte"));
+                    establecerValores();
                     break;
                 }
                 case 3:
@@ -47,4 +48,5 @@ public class Artistica extends Gimnasia {
         }
 
     }
+   
 }
