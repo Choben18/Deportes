@@ -34,11 +34,8 @@ public class Futbol extends DeportesGenerales {
                          
                          break;}
                 case 2 : { super.establecerValores();
-<<<<<<< HEAD
-                          super.setCadena(toString());
-=======
-                          
->>>>>>> ca6532c0e7ab830e67d5e93e94052db6ae3d5671
+                          super.setCadena(toString());        
+
                           break;}
                 case 3 : correr();
             }

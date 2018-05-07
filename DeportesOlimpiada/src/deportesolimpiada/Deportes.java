@@ -44,6 +44,7 @@ public abstract class Deportes {
     public void desplegarMenu1() {
         setNacionalidad();
         setNumeroDeRepresentantes();
+        setPosicionTabla();
         setMedallas();
         setContadorMedallas();
         
@@ -54,7 +55,7 @@ public abstract class Deportes {
         setNumeroDeRepresentantes();
         setPosicionTabla();
         setMedallas();
-        setContadorMedallas();
+       // setContadorMedallas();
     }
 
     public static void correr() {
@@ -82,7 +83,7 @@ public abstract class Deportes {
                     
                 case 5:
                     JOptionPane.showMessageDialog(null,cadena);
-
+                    break;
                 case 6: {
                     JOptionPane.showMessageDialog(null, "¡Hasta la proxima!");
                     System.exit(0);
@@ -158,7 +159,7 @@ public abstract class Deportes {
     }
 
     public void setCadena(String cadena) {
-        cadena = Deportes.cadena+cadena;
+        this.cadena = this.cadena+cadena;
     }
 
     
@@ -189,14 +190,8 @@ public abstract class Deportes {
 
     @Override
     public String toString() {
-<<<<<<< HEAD
        return "";
-=======
-
-        return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
-       
-
->>>>>>> ca6532c0e7ab830e67d5e93e94052db6ae3d5671
+   
     }
 
 }
