@@ -44,7 +44,7 @@ public abstract class Deportes {
         setNumeroDeRepresentantes();
         setMedallas();
         setContadorMedallas();
-        correr();
+        
     }
     
     public void establecerValores(){
