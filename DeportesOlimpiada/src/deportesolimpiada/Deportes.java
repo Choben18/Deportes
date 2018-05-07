@@ -56,6 +56,10 @@ public abstract class Deportes {
         setPosicionTabla();
          setContadorMedallas();
         setMedallas();
+<<<<<<< HEAD
+=======
+
+>>>>>>> d28476317b504528df1e8af84c44061588f4f11f
     }
 
     public static void correr() {
@@ -191,6 +195,15 @@ public abstract class Deportes {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
        return "";}
+=======
+       return "";
+
+
+    //    return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
+       
+    }
+>>>>>>> d28476317b504528df1e8af84c44061588f4f11f
 
 }
