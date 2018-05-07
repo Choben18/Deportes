@@ -31,7 +31,7 @@ public class DeportesGenerales extends Deportes {
             switch (Op){
                 case 1 : {super.d = new Futbol(); break;}
                 case 2 : {super.d = new Baloncesto(); break;}
-                case 3 : desplegarMenu1();
+                case 3 : correr();
             }
         }
 

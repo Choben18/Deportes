@@ -46,6 +46,13 @@ public abstract class Deportes {
         setContadorMedallas();
         correr();
     }
+    
+    public void establecerValores(){
+        setNacionalidad();
+        setNumeroDeRepresentantes();
+        setMedallas();
+        setContadorMedallas();
+    }
 
     public static void correr() {
         String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo", "Cerrar Programa "};

@@ -39,7 +39,7 @@ public class Acuaticos extends Deportes {
                     break;
                 }
                 case 3:
-                    desplegarMenu1();
+                    correr();
             }
         }
 
