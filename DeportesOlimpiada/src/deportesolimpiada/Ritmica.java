@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
  * @author Angel
  */
 public class Ritmica extends Gimnasia {
+    String cardio;
 
     public Ritmica() {
         super();

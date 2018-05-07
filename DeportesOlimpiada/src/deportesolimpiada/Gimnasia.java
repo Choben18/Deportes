@@ -5,6 +5,7 @@
  */
 package deportesolimpiada;
 
+import java.util.Random;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,7 +15,7 @@ import javax.swing.JOptionPane;
 public class Gimnasia extends Deportes {
 
     private int puntuacion;
-    private int posicin;
+    
     
 
     public Gimnasia() {
@@ -45,6 +46,9 @@ public class Gimnasia extends Deportes {
         }
 
     }
-    
+    public void setPuntuacion(){
+        Random rd = new Random();
+        this.puntuacion = rd.nextInt(100)+50;
+    }
 
 }
