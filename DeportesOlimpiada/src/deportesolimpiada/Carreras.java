@@ -15,7 +15,7 @@ public class Carreras extends Atletismo {
     
          public Carreras(){
         super();
-        desplegarSubMenu();
+        super.desplegarSubMenu();
     }
     
     @Override
