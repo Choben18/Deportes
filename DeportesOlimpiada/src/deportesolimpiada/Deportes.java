@@ -80,7 +80,7 @@ public abstract class Deportes {
 
                 case 5: {
                     JOptionPane.showMessageDialog(null, "¡Hasta la proxima!");
-                    break;
+                    System.exit(0);
                 }
                 default:
                     JOptionPane.showMessageDialog(null, "Elija una opcion valida", "ERROR", JOptionPane.WARNING_MESSAGE);
