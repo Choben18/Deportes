@@ -54,12 +54,9 @@ public abstract class Deportes {
         setNacionalidad();
         setNumeroDeRepresentantes();
         setPosicionTabla();
+         setContadorMedallas();
         setMedallas();
-<<<<<<< HEAD
-       // setContadorMedallas();
-=======
-        //setContadorMedallas();
->>>>>>> ddf63acf6b43841de76303004f7c48b1d4358d5b
+       
     }
 
     public static void correr() {
@@ -181,9 +178,9 @@ public abstract class Deportes {
     }
 
     public void setContadorMedallas() {
-        int m1 = Integer.parseInt(Medallas[0]);
-        int m2 = Integer.parseInt(Medallas[1]);
-        int m3 = Integer.parseInt(Medallas[2]);
+        int m1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Medallas de Oro: "));
+        int m2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Medallas de Plata: "));
+        int m3 = Integer.parseInt(JOptionPane.showInputDialog(null,"Medallas de Bronze: "));
         contadormedallas = (m1 + m2 + m3);
         JOptionPane.showMessageDialog(null, "Total de medallas: " + contadormedallas);
     }
@@ -194,17 +191,7 @@ public abstract class Deportes {
 
     @Override
     public String toString() {
-<<<<<<< HEAD
        return "";
-   
-=======
-
-       return "";
-
-    //    return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
-       
-
->>>>>>> ddf63acf6b43841de76303004f7c48b1d4358d5b
     }
 
 }
