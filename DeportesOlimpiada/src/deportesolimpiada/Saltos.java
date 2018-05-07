@@ -19,7 +19,25 @@ public class Saltos extends Atletismo {
     
     @Override
     public void desplegarSubMenu(){
-        JOptionPane.showMessageDialog(null,"Saltos");
+        int Op = 0;
+
+        while (Op != 3) {
+            String[] buttons = {"1.-Llenar por default", "3.-Llenar manualmente", "Volver"};
+            Op = JOptionPane.showOptionDialog(null, "Seleccione una opcion", "LLENADO DE INFORMACION", JOptionPane.INFORMATION_MESSAGE, 0, null, buttons, buttons[2]);
+            Op = Op + 1;
+            switch (Op) {
+                case 1: {
+                    
+                    break;
+                }
+                case 2: {
+                    
+                    break;
+                }
+                case 3:
+                    super.desplegarSubMenu();
+            }
+        }
     }
     
 }

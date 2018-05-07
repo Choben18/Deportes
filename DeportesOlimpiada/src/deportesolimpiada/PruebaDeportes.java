@@ -17,11 +17,11 @@ public class PruebaDeportes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Deportes[] pais = new Deportes[3];
-        for (int i = 0; i < pais.length; i++) {
+        Deportes[] Ob = new Deportes[3];
+        for (int i = 0; i < Ob.length; i++) {
             //pais[i].desplegarSubMenu();
-            pais[i].correr();
-            pais[i].toString();
+            Ob[i].correr(Ob);
+            Ob[i].toString();
         }
 
     }

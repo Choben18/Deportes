@@ -13,9 +13,11 @@ import javax.swing.JOptionPane;
  */
 public class Gimnasia extends Deportes {
 
-    private int re;
+    private int puntuacion;
+    private int posicin;
+    
 
-    public Gimnasia() {
+    public Gimnasia(Deportes x []) {
         super();
 
     }
@@ -43,5 +45,6 @@ public class Gimnasia extends Deportes {
         }
 
     }
+    
 
 }

@@ -17,7 +17,7 @@ public abstract class Deportes {
     protected Deportes d;
     private static int Id_Deporte;
     private String NombreDeporte;
-    private int puntosTabla;
+    private int posicionTabla;
     private int NumeroDeRepresentantes;
     private String[] Medallas = new String[3];
     private int contadormedallas;
@@ -54,7 +54,7 @@ public abstract class Deportes {
         setContadorMedallas();
     }
 
-    public static void correr() {
+    public static void correr(Deportes x []) {
         String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo", "Cerrar Programa "};
         Deportes d;
         int op = 0;
@@ -71,11 +71,10 @@ public abstract class Deportes {
                     d.desplegarSubMenu();
                     break;
                 case 3:
-                    d = new Gimnasia();
+                    d = new Gimnasia(x);
                     d.desplegarSubMenu();
                 case 4:
                     d = new Atletismo();
-                    d.desplegarSubMenu();
                     break;
 
                 case 5: {
@@ -87,6 +86,7 @@ public abstract class Deportes {
             }
         }
     }
+    
 
     public abstract void desplegarSubMenu();
 
@@ -101,8 +101,9 @@ public abstract class Deportes {
         return this.NombreDeporte;
     }
 
-    public int getPuntosTabla() {
-        return this.puntosTabla;
+    public int getPosicionTabla() {
+        
+        return this.posicionTabla;
     }
 
     public int getNumeroDeRepresentantes() {

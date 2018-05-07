@@ -17,6 +17,7 @@ public class Atletismo extends Deportes {
 
     public Atletismo() {
         super();
+        desplegarSubMenu();
 
     }
 
@@ -26,7 +27,7 @@ public class Atletismo extends Deportes {
 
         while (Op != 3) {
             String[] buttons = {"Carreras", "Saltos", "Volver"};
-            Op = JOptionPane.showOptionDialog(null, "Seleccione una categoria", "CATEGORIAS DE DEPORTES", JOptionPane.INFORMATION_MESSAGE, 0, null, buttons, buttons[2]);
+            Op = JOptionPane.showOptionDialog(null, "Seleccione una opcion", "LLENADO DE INFORMACION", JOptionPane.INFORMATION_MESSAGE, 0, null, buttons, buttons[2]);
             Op = Op + 1;
             switch (Op) {
                 case 1: {
