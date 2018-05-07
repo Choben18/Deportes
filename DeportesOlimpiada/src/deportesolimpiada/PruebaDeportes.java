@@ -20,7 +20,7 @@ public class PruebaDeportes {
         Deportes[] Ob = new Deportes[3];
         for (int i = 0; i < Ob.length; i++) {
             //pais[i].desplegarSubMenu();
-            Ob[i].correr(Ob);
+            Ob[i].correr();
             Ob[i].toString();
         }
 

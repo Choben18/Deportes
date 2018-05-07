@@ -54,7 +54,7 @@ public abstract class Deportes {
         setContadorMedallas();
     }
 
-    public static void correr(Deportes x []) {
+    public static void correr() {
         String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo", "Cerrar Programa "};
         Deportes d;
         int op = 0;
@@ -71,7 +71,7 @@ public abstract class Deportes {
                     d.desplegarSubMenu();
                     break;
                 case 3:
-                    d = new Gimnasia(x);
+                    d = new Gimnasia();
                     d.desplegarSubMenu();
                 case 4:
                     d = new Atletismo();
@@ -133,7 +133,7 @@ public abstract class Deportes {
        
     }
 
-    public void setPuntosTabla() {
+    public void setPosicionTabla() {
         int x, x1, x2;
         x = Integer.parseInt(Medallas[0]);
         x1 = Integer.parseInt(Medallas[1]) * 2;
