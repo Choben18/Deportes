@@ -34,8 +34,14 @@ public class Futbol extends DeportesGenerales {
                          
                          break;}
                 case 2 : { super.establecerValores();
+<<<<<<< HEAD
                           super.setCadena(toString());        
      
+=======
+
+                          super.setCadena(toString());        
+
+>>>>>>> a9086df0bd49f9b35527e1d19bf81a7c185132e9
                           break;}
                 case 3 : correr();
             }
@@ -44,7 +50,7 @@ public class Futbol extends DeportesGenerales {
     
     @Override
     public String toString(){
-        return "-----FUTBOL------ \nPosicion tabla: "+super.getPosicionTabla()+"\n Numero de Representates: "+super.getNumeroDeRepresentantes()+"\nMedalllas: "+super.getContadorMedallas()+"\nNacionalidad: "+super.getNacionalidad()+"\n";
+        return "-----FUTBOL------ \nPosicion tabla: "+super.getPosicionTabla()+"\n Numero de Representates: "+super.getNumeroDeRepresentantes()+"\nMedalllas: "+super.getMedallas()+"\nNacionalidad: "+super.getNacionalidad()+"\n";
     }
     
 }
