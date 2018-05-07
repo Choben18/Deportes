@@ -23,7 +23,8 @@ public abstract class Deportes {
     private String medallas;
     private int contadormedallas;
     private String Nacionalidad;
-
+    static String cadena="";
+    
     public Deportes() {
 
     }
@@ -56,10 +57,10 @@ public abstract class Deportes {
     }
 
     public static void correr() {
-        String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo", "Cerrar Programa "};
+        String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo","Imprimir Objetos", "Cerrar Programa "};
         Deportes d;
         int op = 0;
-        while (op != 5) {
+        while (op != 6) {
             op = JOptionPane.showOptionDialog(null, "Seleccione una categoria", "CATEGORIAS DE DEPORTES", JOptionPane.INFORMATION_MESSAGE, 0, null, buttons, buttons[2]);
             op = op + 1;
             switch (op) {
@@ -77,8 +78,11 @@ public abstract class Deportes {
                 case 4:
                     d = new Atletismo();
                     break;
+                    
+                case 5:
+                    JOptionPane.showMessageDialog(null,cadena);
 
-                case 5: {
+                case 6: {
                     JOptionPane.showMessageDialog(null, "¡Hasta la proxima!");
                     System.exit(0);
                 }
@@ -98,6 +102,11 @@ public abstract class Deportes {
         return this.Id_Deporte;
     }
 
+    public String getCadena() {
+        return cadena;
+    }
+    
+    
     public String getNombreDeporte() {
         return this.NombreDeporte;
     }
@@ -135,8 +144,16 @@ public abstract class Deportes {
     }
 
     public void setPosicionTabla() {
+<<<<<<< HEAD
         Random rd = new Random();
         this.posicionTabla = rd.nextInt(2)+1;
+=======
+        int x, x1, x2;
+        x = Integer.parseInt(Medallas[0]);
+        x1 = Integer.parseInt(Medallas[1]) * 2;
+        x2 = Integer.parseInt(Medallas[2]) * 5;
+        posicionTabla = x + x1 + x2;
+>>>>>>> 4465903c9473d9c3f1663202eb532b877885a63a
     }
 
     public void setNumeroDeRepresentantes() {
@@ -144,6 +161,11 @@ public abstract class Deportes {
         NumeroDeRepresentantes = r.nextInt(50);
     }
 
+    public void setCadena(String cadena) {
+        cadena = Deportes.cadena+cadena;
+    }
+
+    
     public void setMedallas() {
         if (this.posicionTabla==3) {
             this.medallas=Medallas[2];
@@ -171,7 +193,11 @@ public abstract class Deportes {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
+=======
+        return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", puntosTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
+>>>>>>> 4465903c9473d9c3f1663202eb532b877885a63a
     }
 
 }

@@ -30,13 +30,19 @@ public class Futbol extends DeportesGenerales {
             Op = JOptionPane.showOptionDialog(null, "Llenado de datos", "Seleccionar llenado de datos", JOptionPane.INFORMATION_MESSAGE, 0, null, buttons, buttons[2]);
             Op = Op+1;
               switch (Op){
-                case 1 : {super.d = new Futbol(); 
+                case 1 : { 
+                         
                          break;}
-                case 2 : {super.d = new Futbol();
+                case 2 : { super.d.establecerValores();
+                          
                           break;}
                 case 3 : correr();
             }
         }
+    }
+    
+    public String toString(){
+        return "-----FUTBOL------ \nPosicion tabla: "+super.d.getPosicionTabla()+"\n Numero de Representates: "+super.d.getNumeroDeRepresentantes()+"\nMedalllas: "+super.d.getContadorMedallas()+"\nNacionalidad: "+super.d.getNacionalidad()+"\n";
     }
     
 }
