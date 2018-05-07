@@ -54,7 +54,7 @@ public abstract class Deportes {
         setContadorMedallas();
     }
 
-    public static void correr(Deportes x []) {
+    public static void correr() {
         String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo", "Cerrar Programa "};
         Deportes d;
         int op = 0;

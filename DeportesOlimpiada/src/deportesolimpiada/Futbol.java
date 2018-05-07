@@ -31,6 +31,7 @@ public class Futbol extends DeportesGenerales {
             Op = Op+1;
               switch (Op){
                 case 1 : {super.d = new Futbol(); 
+                         super.d.se
                          break;}
                 case 2 : {super.d = new Futbol();
                           break;}
