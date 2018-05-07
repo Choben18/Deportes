@@ -28,6 +28,13 @@ public class Carreras extends Atletismo {
             Op = Op+1;
               switch (Op){
                 case 1 : { 
+                    setNacionalidad("Mexicana");
+                    setNumeroDeRepresentantes();
+                    setPosicionTabla();
+                    setContadorMedallasR();
+                    setMedallas();
+                    
+                    super.setCadena(toString());
                          
                          break;}
                 case 2 : { super.establecerValores();

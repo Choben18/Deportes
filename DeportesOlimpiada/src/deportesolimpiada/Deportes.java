@@ -19,12 +19,12 @@ public abstract class Deportes {
     private String NombreDeporte;
     private int posicionTabla;
     private int NumeroDeRepresentantes;
-    private String[] Medallas={"Oro","Plata","Bronce"};
+    private String[] Medallas = {"Oro", "Plata", "Bronce"};
     private String medallas;
     private int contadormedallas;
     private String Nacionalidad;
-    static String cadena="";
-    
+    static String cadena = "";
+
     public Deportes() {
 
     }
@@ -47,23 +47,20 @@ public abstract class Deportes {
         setPosicionTabla();
         setMedallas();
         setContadorMedallas();
-        
+
     }
-    
-    public void establecerValores(){
+
+    public void establecerValores() {
         setNacionalidad();
         setNumeroDeRepresentantes();
         setPosicionTabla();
-         setContadorMedallas();
+        setContadorMedallas();
         setMedallas();
-<<<<<<< HEAD
-=======
 
->>>>>>> d28476317b504528df1e8af84c44061588f4f11f
     }
 
     public static void correr() {
-        String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo","Imprimir Objetos", "Cerrar Programa "};
+        String[] buttons = {"Deportes Generales ", "Acuaticos", "Gimnasia", "Atletismo", "Imprimir Objetos", "Cerrar Programa "};
         Deportes d;
         int op = 0;
         while (op != 6) {
@@ -83,11 +80,11 @@ public abstract class Deportes {
                     d.desplegarSubMenu();
                 case 4:
                     d = new Atletismo();
-                     d.desplegarSubMenu();
+                    d.desplegarSubMenu();
                     break;
-                    
+
                 case 5:
-                    JOptionPane.showMessageDialog(null,cadena);
+                    JOptionPane.showMessageDialog(null, cadena);
                     break;
                 case 6: {
                     JOptionPane.showMessageDialog(null, "¡Hasta la proxima!");
@@ -98,7 +95,6 @@ public abstract class Deportes {
             }
         }
     }
-    
 
     public abstract void desplegarSubMenu();
 
@@ -112,14 +108,13 @@ public abstract class Deportes {
     public String getCadena() {
         return cadena;
     }
-    
-    
+
     public String getNombreDeporte() {
         return this.NombreDeporte;
     }
 
     public int getPosicionTabla() {
-        
+
         return this.posicionTabla;
     }
 
@@ -147,14 +142,13 @@ public abstract class Deportes {
     }
 
     public void setNombreDeporte(String name) {
-       this.NombreDeporte = name;
+        this.NombreDeporte = name;
     }
 
     public void setPosicionTabla() {
 
         Random rd = new Random();
-        this.posicionTabla = rd.nextInt(2)+1;
-
+        this.posicionTabla = rd.nextInt(2) + 1;
 
     }
 
@@ -164,46 +158,47 @@ public abstract class Deportes {
     }
 
     public void setCadena(String cadena) {
-        this.cadena = this.cadena+cadena;
+        this.cadena = this.cadena + cadena;
     }
 
-    
     public void setMedallas() {
-        if (this.posicionTabla==3) {
-            this.medallas=Medallas[2];
+        if (this.posicionTabla == 3) {
+            this.medallas = Medallas[2];
         }
-        if (this.posicionTabla==2) {
-            this.medallas=Medallas[1];
+        if (this.posicionTabla == 2) {
+            this.medallas = Medallas[1];
         }
-        if (this.posicionTabla==1) {
-            this.medallas=Medallas[0];
+        if (this.posicionTabla == 1) {
+            this.medallas = Medallas[0];
         }
 
     }
 
     public void setContadorMedallas() {
-        int m1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Medallas de Oro: "));
-        int m2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Medallas de Plata: "));
-        int m3 = Integer.parseInt(JOptionPane.showInputDialog(null,"Medallas de Bronze: "));
+        int m1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Medallas de Oro: "));
+        int m2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Medallas de Plata: "));
+        int m3 = Integer.parseInt(JOptionPane.showInputDialog(null, "Medallas de Bronze: "));
         contadormedallas = (m1 + m2 + m3);
         JOptionPane.showMessageDialog(null, "Total de medallas: " + contadormedallas);
+    }
+
+    public void setContadorMedallasR() {
+        Random rd = new Random();
+        contadormedallas = rd.nextInt(10);
     }
 
     public void setNacionalidad() {
         Nacionalidad = JOptionPane.showInputDialog(null, "Ingrese Nacionalidad");
     }
 
+    public void setNacionalidad(String Nacionalidad) {
+        this.Nacionalidad = Nacionalidad;
+    }
+
     @Override
     public String toString() {
-<<<<<<< HEAD
-       return "";}
-=======
-       return "";
+        return "";
 
-
-    //    return "Deportes{" + " ID_DEPORTE " + Id_Deporte + "NombreDeporte=" + NombreDeporte + ", posicionTabla=" + posicionTabla + ", NumeroDeRepresentantes=" + NumeroDeRepresentantes + ", Medallas Bronce=" + Medallas[0] + ", Medallas Plata=" + Medallas[1] + ", Medallas Oro=" + Medallas[2] + ", Contadormedallas=" + contadormedallas + ", Nacionalidad=" + Nacionalidad + '}';
-       
     }
->>>>>>> d28476317b504528df1e8af84c44061588f4f11f
 
 }
