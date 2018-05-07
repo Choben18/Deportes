@@ -17,7 +17,7 @@ public class Gimnasia extends Deportes {
     private int posicin;
     
 
-    public Gimnasia(Deportes x []) {
+    public Gimnasia() {
         super();
 
     }
